@@ -2,6 +2,8 @@
 <html lang ="en">
 <head>
     <title>Survey Form</title>
+
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 <h1  id="title">Survey form  </h1>
@@ -17,18 +19,25 @@
 <input type="email" id="email" placeholder="Enter your Email"></input></br>
 <label id="number-label">Age</label></br>
 <input type="number" id="number" min=0 max=100  placeholder="Age"></input></br>
+<label for ="dropdown">How do you rate your experience?</label><br>
+
 <select id="dropdown"></br>
-<option  name="options" value="option1" ></br>
-<option  name="options" value="option2" ></br>
-</select>
-<label></label>
-<input type="radio" name="choice" value= "r1" /></br>
-<label></label>
-<input type="radio" name="choice" value= "r2" /></br>
+<option  name="options" value="Really Good" >Really good</option></br>
+<option  name="options" value="average" >Average</option></br>
+<option  name="options" value="Not Good" >Not good</option></br>
+</select><br>
+<p> Look  to the screen and smile</p>
+<input type="radio"  name="choice" value= "r1" id ="choices1"/></br>
+<label for="choices1"> Select one</label>
+<input type="radio" name="choice" value= "r2"  id="choices2"/></br>
+<label for ="choices2">Choice2 </label>
+<p> Smile Again</p>
 <input type="checkbox" name="check" value= "c1" /></br>
 <input type="checkbox" name="check" value= "c2" /></br>
+
 <textarea>Survey Form</textarea></br>
-<input type="submit" name="submit" id="submit">Submit</button></br>
+
+<button type="submit" name="submit" id="submit">Submit</button></br>
 
 
 </form>
