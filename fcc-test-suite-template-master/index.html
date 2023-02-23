@@ -12,33 +12,45 @@
  This is a sample survey form
 </p>
 
-<form id="survey-form"></br>
-<label id="name-label">Name</label></br>
-<input type="text" id="name" placeholder="Enter your Name"></input></br>
-<label id="email-label">Email</label></br>
-<input type="email" id="email" placeholder="Enter your Email"></input></br>
-<label id="number-label">Age</label></br>
-<input type="number" id="number" min=0 max=100  placeholder="Age"></input></br>
+<form id="survey-form">
+<label id="name-label">Name</label>
+<input type="text" id="name" placeholder="Enter your Name" required></input><br>
+<label id="email-label">Email</label>
+<input type="email" id="email" placeholder="Enter your Email" required></input><br>
+<label id="number-label">Age</label>
+<input type="number" id="number" min=0 max=100  placeholder="Age"></input><br>
 <label for ="dropdown">How do you rate your experience?</label><br>
 
 <select id="dropdown"></br>
-<option  name="options" value="Really Good" >Really good</option></br>
-<option  name="options" value="average" >Average</option></br>
-<option  name="options" value="Not Good" >Not good</option></br>
+<option  name="options" value="Really Good" >Really good</option><br>
+<option  name="options" value="average" >Average</option><br>
+<option  name="options" value="Not Good" >Not good</option><br>
 </select><br>
-<p> Look  to the screen and smile</p>
-<input type="radio"  name="choice" value= "r1" id ="choices1"/></br>
-<label for="choices1"> Select one</label>
-<input type="radio" name="choice" value= "r2"  id="choices2"/></br>
-<label for ="choices2">Choice2 </label>
-<p> Smile Again</p>
-<input type="checkbox" name="check" value= "c1" /></br>
-<input type="checkbox" name="check" value= "c2" /></br>
+<p> Look  to the screen and smile and tick your mood</p>
 
-<textarea>Survey Form</textarea></br>
+
+<input type="radio" id="sad" name="mood" value="sad"    checked>
+<label for="sad">Sad</label>
+  <br>
+
+<input type="radio" id="happy" name="mood" value="happy">
+<label for="happy">Happy</label>
+<br>
+<input type="radio" id="jovial" name="mood" value="">
+<label for="jovial">Jovial</label>
+<br>
+<p> Smile Again and tick a box</p>
+
+<input type="checkbox" name="check"  id="check11" value= "c1" />
+<label for="check1">Check 1</label></br>
+<input type="checkbox" name="check"  id="check22" value= "c2" />
+<label for="check2">Check 2</label> <br>
+<br>
+<p>
+  Tell us more  about yourself</p>
+<textarea id="about-myself" rows="7" cols="50" placeholder="Write something about yourself" required></textarea></br>
 
 <button type="submit" name="submit" id="submit">Submit</button></br>
-
 
 </form>
 
