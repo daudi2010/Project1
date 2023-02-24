@@ -2,56 +2,116 @@
 <html lang ="en">
 <head>
     <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta chartset=""UTF-8>
+    <link rel="icon" type="image/x-icon" href="imgs/Fabicone.jpg">
+<style>
 
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-<h1  id="title">Survey form  </h1>
+#title{
+  text-align: center;
+}
+  form{
+    margin: 0%;
+    padding: 0%;
+    border: 0cap;
+    outline: 0cap;
+ font-size: 14pt;
+ padding: 20px;
+ width: 50%;
+ width: 60vw;
+ max-width: 500px;
+ min-width: 300px;
+ margin: 0 auto;
+}
 
-<p id="description"> 
- This is a sample survey form
-</p>
+input, textarea {
+  background-color: #999999;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  min-height: 2em;
+}
 
-<form id="survey-form">
-<label id="name-label">Name</label>
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+body{
+    text-align: left;
+    text-decoration: beige;
+    width:100%;
+    height:100vh;
+    background-image: url(imgs/Background.jpg);
+    background-position:right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+  border-bottom: 3px solid #8a8a93;
+  background-color: rgb(210, 210, 202);
+  opacity: 0.85;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+label{
+  text-decoration: dotted;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+</style>
+  </head>
+<body>  
+  <fieldset>
+<h1  id="title">Survey Form  </h1>
+
+<h4 id="title"> 
+ This is a sample survey form (Measuring satisfaction of pair project working on Microverse)
+</h4>
+</fieldset>
+<fieldset>
+<form id="survey-form" action="https://formsubmit.co/jsaladin@gmail.com" method="post">
+  <input type="hidden" name="_next" value="https://mypage.com/Thanks">
 <input type="text" id="name" placeholder="Enter your Name" required></input><br>
-<label id="email-label">Email</label>
 <input type="email" id="email" placeholder="Enter your Email" required></input><br>
-<label id="number-label">Age</label>
-<input type="number" id="number" min=0 max=100  placeholder="Age"></input><br>
-<label for ="dropdown">How do you rate your experience?</label><br>
+<input type="number" id="number" min=0 ma x=100  placeholder="Age"></input><br>
 
-<select id="dropdown"></br>
-<option  name="options" value="Really Good" >Really good</option><br>
+<select id="dropdown">
+  <option  name="options" value="Really Good" >How do you rate your experience?</option><br>
+  <option  name="options" value="Really Good" >Really good</option><br>
 <option  name="options" value="average" >Average</option><br>
-<option  name="options" value="Not Good" >Not good</option><br>
-</select><br>
-<p> Look  to the screen and smile and tick your mood</p>
-
-
-<input type="radio" id="sad" name="mood" value="sad"    checked>
-<label for="sad">Sad</label>
-  <br>
-
-<input type="radio" id="happy" name="mood" value="happy">
-<label for="happy">Happy</label>
-<br>
-<input type="radio" id="jovial" name="mood" value="">
-<label for="jovial">Jovial</label>
-<br>
-<p> Smile Again and tick a box</p>
-
-<input type="checkbox" name="check"  id="check11" value= "c1" />
-<label for="check1">Check 1</label></br>
-<input type="checkbox" name="check"  id="check22" value= "c2" />
-<label for="check2">Check 2</label> <br>
-<br>
+<option  name="options" value="Not Good" >Not good</option>
+</select>
+<fieldset>
+<label> Look  to the screen and smile and tick your mood</label><br>
+<input class="inline" type="radio" id="happy" name="mood" value="happy">
+<label class="inline" for="happy">Happy</label>
+<input class="inline" type="radio" id="jovial" name="mood" value="">
+<label class="inline" for="jovial">Jovial</label>
+<input class="inline" type="radio" id="Sad" name="mood" value="">
+<label class="inline" for="jovial">Sad</label>
+</fieldset>
+<fieldset>
+<label > Smile Again and tick a box</label></br>
+<input class="inline" type="checkbox" name="check"  id="check11" value= "c1" />
+<label class="inline" for="check1">Happier than yesterday!</label></br>
+<input class="inline" type="checkbox" name="check"  id="check22" value= "c2" />
+<label class="inline" for="check2">Probably happier than tomorrow!</label>
 <p>
   Tell us more  about yourself</p>
-<textarea id="about-myself" rows="7" cols="50" placeholder="Write something about yourself" required></textarea></br>
+<textarea id="about-myself" rows="7" cols="50" placeholder="Write something about yourself" required></textarea>
 
 <button type="submit" name="submit" id="submit">Submit</button></br>
-
+</fieldset>
 </form>
 
 </body>
